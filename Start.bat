@@ -40,4 +40,4 @@ cmd /k
 :hiboot
 call codes/hiboot.bat
 :start2
-call start2.bat
+call codes/start2.bat

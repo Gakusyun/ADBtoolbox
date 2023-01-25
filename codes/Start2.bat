@@ -25,4 +25,4 @@ goto MENU
 :non
 goto MENU
 :start
-call Start.bat
+call ./Start.bat
