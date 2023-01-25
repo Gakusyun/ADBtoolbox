@@ -1,0 +1,2 @@
+cd ..
+call Start.bat
