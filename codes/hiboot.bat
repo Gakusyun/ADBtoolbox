@@ -3,16 +3,16 @@
 cls
 echo 1.Recovery
 echo 2.Fastboot
-echo 3.æ‰“å¼€å‘½ä»¤è¡Œ
-echo 4.è¿”å›ä¸»èœå•
+echo 3.´ò¿ªÃüÁîĞĞ
+echo 4.·µ»ØÖ÷²Ëµ¥
 set choice=
-set /p choice=è¯·ç›´æ¥è¾“å…¥å¯¹åº”æ•°å­—å›è½¦ï¼š
+set /p choice=ÇëÖ±½ÓÊäÈë¶ÔÓ¦Êı×Ö»Ø³µ£º
 if not "%choice%"=="" set choice=%choice:~0,1%
 if /i "%choice%"=="1" goto rec
 if /i "%choice%"=="2" goto fastboot
 if /i "%choice%"=="3" goto cmda
 if /i "%choice%"=="4" goto back
-ECHO.è¾“å…¥æ— æ•ˆï¼Œè¯·é‡æ–°è¾“å…¥...
+ECHO.ÊäÈëÎŞĞ§£¬ÇëÖØĞÂÊäÈë...
 timeout /t 2 /nobreak >NUL
 ECHO.
 goto MENU 
@@ -24,7 +24,7 @@ adb.exe reboot fastboot
 call flash.bat
 :cmda
 cls
-echo è¾“å…¥ call b.bat è¿”å›ä¸»èœå•
+echo ÊäÈë call b.bat ·µ»ØÖ÷²Ëµ¥
 cmd /k
 :back
 fastboot.exe reboot
