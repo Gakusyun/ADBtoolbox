@@ -1,6 +1,7 @@
 #include<stdlib.h>
 int main()
 {
-	system("call o.sh");
+    system("cd codes");
+	system("call start.bat");
     return 0;
 }
