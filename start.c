@@ -1,6 +1,6 @@
 #include<stdlib.h>
 int main()
 {
-    system("call codes/start.sh");
+	system("call o.sh");
     return 0;
 }
