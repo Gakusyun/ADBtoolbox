@@ -1,15 +1,15 @@
 @ECHO OFF
 :MENU
 cls
-echo 1.°²×°Èí¼ş
-echo 2.ÍÆËÍÎÄ¼ş
-echo 3.½ØÆÁ
-echo 4.ÏßË¢×¨Çø
-echo 5.´ò¿ªÃüÁîĞĞ
-echo 6.¸ß¼¶ÖØÆô
-echo 7.ÏÂÒ»Ò³
+echo 1.å®‰è£…è½¯ä»¶
+echo 2.æ¨é€æ–‡ä»¶
+echo 3.æˆªå±
+echo 4.çº¿åˆ·ä¸“åŒº
+echo 5.æ‰“å¼€å‘½ä»¤è¡Œ
+echo 6.é«˜çº§é‡å¯
+echo 7.ä¸‹ä¸€é¡µ
 set choice=
-set /p choice=ÇëÖ±½ÓÊäÈë¶ÔÓ¦Êı×Ö»Ø³µ£º
+set /p choice=è¯·ç›´æ¥è¾“å…¥å¯¹åº”æ•°å­—å›è½¦ï¼š
 if not "%choice%"=="" set choice=%choice:~0,1%
 if /i "%choice%"=="1" goto ins
 if /i "%choice%"=="2" goto push
@@ -18,26 +18,24 @@ if /i "%choice%"=="4" goto flash
 if /i "%choice%"=="5" goto cmda
 if /i "%choice%"=="6" goto hiboot
 if /i "%choice%"=="7" goto start2
-ECHO.ÊäÈëÎŞĞ§£¬ÇëÖØĞÂÊäÈë...
+ECHO.è¾“å…¥æ— æ•ˆï¼Œè¯·é‡æ–°è¾“å…¥...
 timeout /t 2 /nobreak >NUL
 ECHO.
 goto MENU
 :ins
-call codes/installapk.bat
+call installapk.bat
 :push
-call codes/pushfile.bat
+call pushfile.bat
 :shot
-call codes/Screenshot.bat
+call Screenshot.bat
 :flash
-cd codes
 adb.exe reboot fastboot
 call flash.bat
 :cmda
-cd codes
 cls
-echo ÊäÈë call b.bat ·µ»ØÖ÷²Ëµ¥
+echo è¾“å…¥ call b.bat è¿”å›ä¸»èœå•
 cmd /k
 :hiboot
-call codes/hiboot.bat
+call hiboot.bat
 :start2
-call codes/start2.bat
+call start2.bat
