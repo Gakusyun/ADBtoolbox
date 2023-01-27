@@ -1,6 +1,8 @@
 >注意：此文件利用 Markdown 语法写作，如果没有支持的应用程序，可能无法达到最佳效果
 
 >使用此应用需要先下载Android SDK Platform-Tools，可以点击[此处](https://developer.android.google.cn/studio/releases/platform-tools?hl=zh-cn)进行下载；下载完成后，需要将adb.exe所在文件夹内所有文件解压到codes文件夹下
+
+>Attention: bat不支持utf-8，余下代码将会使用c语言完成
 # ADBtoolbox
 1.[开始](#开始)
 
